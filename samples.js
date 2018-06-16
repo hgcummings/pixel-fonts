@@ -4,7 +4,7 @@ const fs = require('fs');
 let allCharacters = "";
 
 for (let charCode = 33; charCode < 127; ++charCode) {
-    if (charCode % 16 === 0) {
+    if (charCode % 32 === 0) {
         allCharacters += "\n";
     }
     allCharacters += String.fromCharCode(charCode);
