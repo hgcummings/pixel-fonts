@@ -1,0 +1,28 @@
+{
+  "name": "pixel-fonts",
+  "version": "0.1.0",
+  "description": "Pixel fonts in pure JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hgcummings/pixel-fonts.git"
+  },
+  "keywords": [
+    "pixel",
+    "font",
+    "fonts"
+  ],
+  "author": "hgcummings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hgcummings/pixel-fonts/issues"
+  },
+  "homepage": "https://github.com/hgcummings/pixel-fonts#readme",
+  "dependencies": {
+    "loglevel": "^1.6.1",
+    "node-png": "^0.4.3"
+  }
+}
