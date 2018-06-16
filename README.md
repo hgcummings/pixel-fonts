@@ -35,15 +35,15 @@ Render as a PNG: see [samples.js](https://github.com/hgcummings/pixel-fonts/blob
 
 ### API
 
-#### fonts
+#### `fonts`
 
 Set of available fonts. Each font has a `glyphs` property describing the font, but all you need to do is pass the whole font object into one of the `render...` methods.
 
-#### renderPixels(text, font)
+#### `renderPixels(text, font)`
 
 Renders the supplied `text` string in the specified `font` as an array of arrays of pixels. Each array represents a single row, with each element (`1` or `0`) representing whether the pixel should be active or not.
 
-#### renderImage(text, font, renderOptions)
+#### `renderImage(text, font, renderOptions)`
 
 Renders the supplied `text` string in the specified `font` as an image. Returns a stream of PNG data that can be piped to a file or elsewhere. `fontOptions` takes the following properties:
 
