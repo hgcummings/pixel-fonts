@@ -2,10 +2,23 @@ const log = require('loglevel');
 const { PNG } = require('node-png');
 
 const fonts = {
-    sevenPlus: require('./data/seven-plus.json')
+    sevenPlus: require('./data/seven-plus.json'),
+    slumbers: require('./data/slumbers.json')
 };
 
 const gap = [[0]];
+
+const areTouching = (first, second) => {
+    for (let i = 0; i < first.length; ++i) {
+        if (first[i] && first[i][first[i].length - 1] === 1) {
+            for (j = -1; j <= 1; ++j) {
+                if (second[i+j] && second[i+j][0] === 1) {
+                    return true;
+                }
+            }
+        }
+    }
+}
 
 const renderLine  = (text, font) => {
     const letters = text.split("");
@@ -23,7 +36,7 @@ const renderLine  = (text, font) => {
             newCharacter[index + glyph.offset] = row;
         });
         maxHeight = Math.max(maxHeight, newCharacter.length);
-        if (characters.length) {
+        if (characters.length && areTouching(characters[characters.length-1], newCharacter)) {
             characters.push(gap);
         }
         characters.push(newCharacter);
