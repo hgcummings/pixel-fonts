@@ -1,4 +1,4 @@
-# pixel-fonts
+# js-pixel-fonts
 Pixel fonts in pure JS
 
 ![Sample of Seven plus font](https://github.com/hgcummings/pixel-fonts/raw/master/samples/sevenPlus.png)
@@ -14,9 +14,9 @@ Pixel fonts in pure JS
 Render as an array of pixels, for using elsewhere (e.g. drawing to canvas, controlling LEDs):
 
 ```javascript
-const { fonts, render } = require('./index');
+const { fonts, renderPixels } = require('js-pixel-fonts');
 
-const pixels = render("Hi!", fonts.sevenPlus);
+const pixels = renderPixels("Hi!", fonts.sevenPlus);
 
 /**
  * pixels === [
