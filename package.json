@@ -1,14 +1,14 @@
 {
-  "name": "pixel-fonts",
+  "name": "js-pixel-fonts",
   "version": "1.0.0",
-  "description": "Pixel fonts in pure JS",
+  "description": "Pixel fonts in pure JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/hgcummings/pixel-fonts.git"
+    "url": "git+ssh://git@github.com/hgcummings/js-pixel-fonts.git"
   },
   "keywords": [
     "pixel",
