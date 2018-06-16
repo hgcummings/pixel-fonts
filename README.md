@@ -47,6 +47,6 @@ Renders the supplied `text` string in the specified `font` as an array of arrays
 
 Renders the supplied `text` string in the specified `font` as an image. Returns a stream of PNG data that can be piped to a file or elsewhere. `fontOptions` takes the following properties:
 
-`foreground`: array of RGB(A) values, 0-255 (alpha channel defaults to 255 if not specified) for the text colour
-`background`: array of RGB(A) values, 0-255 (alpha channel defaults to 255 if not specified) for the background colour of the image
-`scale` (default `1`): scaling factor (number of pixels per single pixel in the underlying font)
+* `foreground`: array of RGB(A) values, 0-255 (alpha channel defaults to 255 if not specified) for the text colour
+* `background`: array of RGB(A) values, 0-255 (alpha channel defaults to 255 if not specified) for the background colour of the image
+* `scale` (default `1`): scaling factor (number of pixels per single pixel in the underlying font)
