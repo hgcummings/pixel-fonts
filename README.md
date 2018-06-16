@@ -1,11 +1,13 @@
 # js-pixel-fonts
 Pixel fonts in pure JS
 
+[![npm version](https://badge.fury.io/js/js-pixel-fonts.svg)](https://badge.fury.io/js/js-pixel-fonts)
+
 ![Sample of Seven plus font](https://github.com/hgcummings/pixel-fonts/raw/master/samples/sevenPlus.png)
 
 ## Installation
 
-```npm install pixel-fonts --save```
+```npm install js-pixel-fonts --save```
 
 ## Usage
 
