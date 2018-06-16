@@ -1,6 +1,6 @@
 {
   "name": "pixel-fonts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Pixel fonts in pure JS",
   "main": "index.js",
   "scripts": {

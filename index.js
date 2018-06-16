@@ -38,27 +38,33 @@ const renderLine  = (text, font) => {
     }, Array(maxHeight).fill(0).map(_ => []));
 }
 
-const render = (text, font) => {
+const renderPixels = (text, font) => {
     const lines = text.split("\n").map(line => [[0]].concat(renderLine(line, font)));
     lines[0].shift();
     return [].concat(...lines);
 };
 
-const renderPNG = (text, font, background, foreground, scale = 1) => {
-    const pixels = render(text, font);
+const withAlpha = ([r, g, b, a = 255]) => [r, g, b, a];
+
+const renderImage = (text, font, { foreground, background, scale = 1}) => {
+    const pixels = renderPixels(text, font);
     const width = pixels.reduce((acc, cur) => Math.max(acc, cur.length), 0);
     const height = pixels.length;
     const png = new PNG({
         width: width * scale,
         height: height * scale
     });
+
+    const foregroundColour = withAlpha(foreground);
+    const backgroundColour = withAlpha(background);
     for (let y = 0; y < height; ++y) {
         for(let x = 0; x < width; ++x) {
-            const colour = pixels[y][x] ? foreground : background;
+            const colour = pixels[y][x] ? foregroundColour : backgroundColour;
             for(let j = 0; j < scale; ++j) {
                 for (let i = 0; i < scale; ++i) {
                     for(let component = 0; component < 4; ++component) {
-                        png.data[(((x * scale + i) + ((y * scale + j) * png.width)) << 2) + component] = colour[component] || 0;
+                        png.data[(((x * scale + i) + ((y * scale + j) * png.width)) << 2) + component] =
+                            colour[component];
                     }
                 }
             }
@@ -69,6 +75,6 @@ const renderPNG = (text, font, background, foreground, scale = 1) => {
 
 module.exports = {
     fonts,
-    render,
-    renderPNG
+    renderPixels,
+    renderImage
 }
