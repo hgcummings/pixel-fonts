@@ -36,7 +36,8 @@ const renderLine  = (text, font) => {
             newCharacter[index + glyph.offset] = row;
         });
         maxHeight = Math.max(maxHeight, newCharacter.length);
-        if (characters.length && areTouching(characters[characters.length-1], newCharacter)) {
+        if (font.isFixedWidth ||
+            (characters.length && areTouching(characters[characters.length-1], newCharacter))) {
             characters.push(gap);
         }
         characters.push(newCharacter);

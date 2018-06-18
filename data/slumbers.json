@@ -2,6 +2,7 @@
     "name": "Slumbers",
     "lineHeight": 7,
     "description": "Slim (3x5) mathematical symbols and numbers (no letters)",
+    "isFixedWidth": true,
     "glyphs": {
         " ": {
             "offset": 0,
@@ -102,6 +103,26 @@
                 [0,0,1],
                 [0,1,0],
                 [1,0,0]
+            ]
+        },
+        "k": {
+            "offset": 0,
+            "pixels": [
+                [1,0,0],
+                [1,0,0],
+                [1,0,1],
+                [1,1,0],
+                [1,0,1]
+            ]
+        },
+        "M": {
+            "offset": 0,
+            "pixels": [
+                [1,0,1],
+                [1,1,1],
+                [1,0,1],
+                [1,0,1],
+                [1,0,1]
             ]
         },
         "0": {

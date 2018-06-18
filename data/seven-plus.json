@@ -2,6 +2,7 @@
     "name": "Seven plus",
     "lineHeight": 7,
     "description": "7x4 numbers, 7x5 upper case \nand variable-width lower case letters",
+    "isFixedWidth": false,
     "glyphs": {
         "A": {
             "offset": 0,
