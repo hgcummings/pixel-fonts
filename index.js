@@ -1,5 +1,5 @@
 const log = require('loglevel');
-const { PNG } = require('node-png');
+const { PNG } = require('pngjs');
 
 const fonts = {
     sevenPlus: require('./data/seven-plus.json'),
