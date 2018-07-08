@@ -1,6 +1,6 @@
 {
   "name": "js-pixel-fonts",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Pixel fonts in pure JavaScript, for low-resolution displays",
   "main": "index.js",
   "scripts": {
