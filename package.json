@@ -3,6 +3,7 @@
   "version": "1.5.0",
   "description": "Pixel fonts in pure JavaScript, for low-resolution displays",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/hgcummings/pixel-fonts#readme",
   "dependencies": {
+    "@types/pngjs": "^6.0.1",
     "loglevel": "^1.6.1",
     "pngjs": "^3.3.3"
   }
