@@ -23,7 +23,7 @@ export interface RenderOptions {
 
 export const fonts: {
   sevenPlus: Font;
-  slimbers: Font;
+  slumbers: Font;
 };
 
 export function renderPixels(text: string, font: Font): Array<Pixel[]>;
