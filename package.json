@@ -28,5 +28,8 @@
     "@types/pngjs": "^6.0.1",
     "loglevel": "^1.6.1",
     "pngjs": "^3.3.3"
+  },
+  "devDependencies": {
+    "nanobench": "^2.1.1"
   }
 }
