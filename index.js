@@ -11,7 +11,7 @@ const gap = [[0]];
 const areTouching = (first, second) => {
     for (let i = 0; i < first.length; ++i) {
         if (first[i] && first[i][first[i].length - 1] === 1) {
-            for (j = -1; j <= 1; ++j) {
+            for (let j = -1; j <= 1; ++j) {
                 if (second[i+j] && second[i+j][0] === 1) {
                     return true;
                 }
